@@ -22,7 +22,7 @@ html{
 
 /*Início | background-header-main */
 .background-header-main{
-  background-color: black;
+  background-color: #1f2937;
   width: 100%;
 }
 
@@ -35,7 +35,7 @@ header nav{
   position: fixed;
   width: 100%;
   top:0;
-  background-color: rgba(0, 0, 0);
+  background-color: #1f2937;
   z-index: 99;
 }
 
@@ -47,7 +47,7 @@ header nav h2{
 }
 
 header span{
-  color: #f9004d;
+  color: #007bb6;
 }
 
 header nav ul{
@@ -61,7 +61,7 @@ nav ul li{
 }
 
 nav ul li a{
-  color: #fff;
+  color: #2563eb;
   font-weight: bold;
   transition: 2s; 
   letter-spacing: 2px;  
@@ -89,7 +89,7 @@ nav ul li a:hover::after{
 }
 
 .btn-nav{
-  background-color: #f9004d;
+  background-color: #007bb6;
   border:none;
   color: #fff;
   letter-spacing: 2px;
@@ -112,9 +112,9 @@ nav ul li a:hover::after{
   width: 100%;
   display:flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   align-items: center;
-  padding: 160px 0px 90px 0px;
+  padding: 140px 0px 90px;
 }
 .perfil{
   padding-left: 70px;
@@ -124,17 +124,17 @@ nav ul li a:hover::after{
   padding-right: 70px;
 }
 .perfil h4{
-  color: #9c9c9c;
+  color: #7f8c8d;
   letter-spacing: 1px;
   font-size: 130%;
 }
 .perfil h1{
-  color: #fff;
+  color: #ecf0f1;
   margin: 30px 0px 10px;
   font-size: 7rem;
 }
 .perfil h1 span{
-  color: #F39C12;
+  color: #2563eb;
 }
 h3{
   color: #fff;
@@ -144,7 +144,7 @@ h3{
 }
 .img-main .foto{
   border-radius: 50%;
-  box-shadow: 10px 10px 15px #f9004f50;
+  box-shadow: 10px 10px 15px #2563eb;
   filter: opacity(70%);
   transform: translateY(0px);
   animation: float 4s ease-in-out infinite;
@@ -182,7 +182,7 @@ h3{
   padding: 10px 30px;
   border: none;
   border-radius: 30px;
-  background-color: #f9004d;
+  background-color: #2563eb;
   color: #fff;
   box-shadow: 0px 0px 15px #858585;
   left: 79%;
