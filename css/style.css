@@ -278,11 +278,11 @@ main.container-card{
   flex-wrap: wrap;
   width: 100%;
   padding: 100px 0px;
-  /* background-color: #1e1e2f; */
+  background-color: #1f2937;
 
 }
 .title-servicos h2{
-  color: #6d6d6d;
+  color: #fff;
   font-size: 5rem;
   margin-bottom: 40px;
 }
@@ -291,7 +291,7 @@ main .cards{
   padding: 0px 50px;
 }
 section.card{
-  background-color: #191919;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,7 +307,7 @@ section.card:first-child{
   margin-left: 0;
 }
 section .icon i{
-  color: #f9004d;
+  color: #2563eb;
   font-size: 2.5rem;
   margin: 20px 0;
 }
@@ -319,13 +319,13 @@ section h5{
   font-weight:bold;
 }
 section p{
-  color:#fff;
+  color:#2563eb;
   font-size: 100%;
   max-width: 400px;
   margin-bottom: 16px;
   letter-spacing: 1px;
   font-weight: 100;
-  text-align: center;
+  text-align: justify;
   line-height: 28px;
 }
 .btn-card{
@@ -333,7 +333,7 @@ section p{
   transition: 2s;
   letter-spacing: 2px;
   box-shadow: 20px 20px 50px -30px rgba(255, 255, 255, 0.250);
-  /* background-color: #3b82f6; */
+  background-color: #2563eb;
   color: #fff;
   padding: 0.5rem 1rem;
   border: solid 1px transparent;
@@ -344,9 +344,9 @@ section p{
 }
 .btn-card:hover{
   background-color: transparent;
-  border: solid 1px #f9004d;
+  border: solid 1px #2563eb;
   transform: scale(1.1);
-  color: #f9004d;
+  color: #2563eb;
   letter-spacing: 2px;
 }
 /*Fim | container-card - Serviços*/
@@ -356,7 +356,7 @@ section p{
 .me-contate{
   width: 100%;
   height: 240px;
-  /* background-color: #1e1e2f; */
+  background-color: #1e1e2f;
   display: flex;
   flex-direction: column;
   justify-content: center;
