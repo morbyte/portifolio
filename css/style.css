@@ -201,7 +201,7 @@ h3{
 
 /*Início container/ sobre mim*/
 .background-color-sobre{
-  /* background-color: #1e1e2f; */
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -229,20 +229,20 @@ h3{
 
 
 .text-sobre h2{
-  color: #fff;
+  color: #2563eb;
   font-size: 6rem;
   text-transform: capitalize;
   margin-bottom: 20px;
 }
 .text-sobre h5{
-  color: #fff;
+  color: #2563eb;
   letter-spacing: 2px;
   font-size: 22px;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
 .text-sobre p{
-  color: #fcfcfc;
+  color: #2563eb;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
@@ -251,7 +251,7 @@ h3{
   
 }
 .btn-sobre{
-  /* background-color: #3b82f6; */
+  background-color: #2563eb;
   color: #fff;
   padding: 13px 20px;
   border: solid 1px transparent;
@@ -262,8 +262,8 @@ h3{
 
 .btn-sobre:hover{
   background-color:transparent;
-  border: 1px solid #f9004d;
-  color:#f9004d;
+  border: 1px solid #2563eb;
+  color:#2563eb;
   cursor: pointer;
   font-weight: bold;
 }
