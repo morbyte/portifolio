@@ -593,7 +593,6 @@ outline: 1px solid limegreen;
   .intro-content h1 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
-    background-color: red;
   }
   .intro-content h2,
   .intro-content h3 {
@@ -628,7 +627,7 @@ outline: 1px solid limegreen;
   .foto {
     width: 12rem;
     height: 12rem;
-    margin-top: 0;
+    margin-top: 1rem;
   }
 
   /************************/
