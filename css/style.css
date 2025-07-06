@@ -277,26 +277,8 @@ html{
   box-shadow: 0 0 15px #58a6ff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Fim container/ sobre mim*/
-
-
-/*Início | container-card - Serviços*/
-main.container-card{
+/* === SECTION: SERVIÇOS === */
+.serviços{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,14 +288,15 @@ main.container-card{
   background-color: #1f2937;
 
 }
-.title-servicos h2{
+.title-h2 h2{
   color: #fff;
   font-size: 5rem;
   margin-bottom: 40px;
 }
-main .cards{
-  display: flex; 
+.card{
   padding: 0px 50px;
+  background-color: red;
+  flex: 1;
 }
 section.card{
   background-color: #FFF;
@@ -576,7 +559,14 @@ footer p{
     width: 100%;
   }
 
-
+.serviços{
+  background-color: red;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
   
