@@ -1,7 +1,7 @@
 /* imports fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap");
 
-/* resets gerais */
+/* Resets */
 * {
   margin: 0;
   padding: 0;
@@ -19,19 +19,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* variaáveis (fontes, backgrouds, títulos... */
-:root {
-  --background-color-fundo1: #0d1117;
-  --background-color-fundo2: #1e1e2f;
-}
-
-/* === HEADER FIXO | COM ESTILO === */
+/* início header */
 .site-header {
-  height: 105px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  padding: 1rem 2rem;
   background-color: rgba(13, 17, 23, 0.7);
   display: flex;
   justify-content: space-between;
@@ -48,8 +37,10 @@ html {
   background-repeat: no-repeat;
   box-shadow: 0 2px 10px rgba(0, 255, 171, 0.1);
 }
-
-/* === LOGO | HEADER === */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .site-logo {
   color: #58a6ff;
   font-size: 3.5rem;
@@ -60,12 +51,6 @@ html {
 }
 .site-logo span {
   color: #00ffab;
-}
-
-/* === MENU | HEADER=== */
-.main-nav {
-  display: flex;
-  align-items: center;
 }
 .nav-list {
   gap: 25px;
@@ -104,11 +89,8 @@ html {
   width: 100%;
 }
 
-/* === SECTION: INTRO === */
+/*início apresentação*/
 .intro-section {
-  background: url(/img/10.jpg) center/cover no-repeat;
-  background-color: #0d1117; /* fallback */
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -207,8 +189,8 @@ html {
   padding: 10px 30px;
   border: none;
   border-radius: 30px;
-  background-color: #00ffab;
-  color: #0d1117;
+  background-color: #58a6ff;
+  color: #fff;
   box-shadow: 0px 0px 15px #00ffab;
   cursor: pointer;
   font-size: 1.2rem;
@@ -228,123 +210,88 @@ html {
   }
 }
 
-/* === SECTION: SOBRE === */
-.section-sobre {
-  background-color: #0d1117;
+/*Início container/ sobre mim*/
+.background-color-sobre {
+  background-color: #fff;
   display: flex;
   align-items: center;
-  padding: 55px 7rem 55px;
-  gap: 2rem;
-  flex-wrap: wrap;
-  color: #ecf0f1;
-  scroll-margin-top: 100px;
-  box-sizing: border-box;
-}
-.image-content {
-  flex: 1;
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  padding: 120px 0px;
 }
-.image-sobre {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 255, 171, 0.4);
-  object-fit: cover;
-  overflow: hidden;
-  position: relative;
-  animation: float 4s ease-in-out infinite;
+.dv-img {
+  padding-left: 70px;
+  width: 50%;
 }
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.sobre-text {
-  flex: 1;
-}
-.sobre-text h2 {
-  color: #58a6ff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.sobre-text h5 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #58a6ff;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
-}
-.sobre-text h5 span {
-  color: #00ffab;
-}
-.sobre-text p {
-  width: 100%;
-  max-width: 100%;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: #cbd5e1;
-}
-.btn-sobre {
-  padding: 12px 30px;
-  font-weight: 600;
-  border: none;
-  border-radius: 30px;
-  background-color: #00ffab;
-  color: #0d1117;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  box-shadow: 0 0 15px #00ffab;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.btn-sobre:hover {
-  background-color: #00ffab;
-  box-shadow: 0 0 15px #58a6ff;
+.text-sobre {
+  padding-right: 70px;
+  width: 50%;
 }
 
-/* === SECTION: SERVIÇOS === */
-.serviços-container {
-  background-color: #1e1e2f;
-  padding: 4rem 7rem;
-  box-sizing: border-box;
+.dv-img .img-sobre {
+  max-width: 100%;
+  height: 20rem;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-left: 10%;
+  transform: translateY(0px);
+  animation: float 4s ease-in-out infinite;
 }
-.title-h2 {
-  color: #cbd5e1;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  text-align: center;
-  font-size: 2.5rem;
-  letter-spacing: 0.2rem;
-  transition: all 0.3s ease;
-  position: relative;
+
+.text-sobre h2 {
+  color: #2563eb;
+  font-size: 6rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
 }
-.title-h2:hover {
-  color: #00ffab;
-  transform: scale(1.05);
+.text-sobre h5 {
+  color: #2563eb;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
 }
-.title-h2::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #00ffab;
-  margin: 0.5rem auto 0;
-  border-radius: 2px;
-  box-shadow: 0 0 10px #00ffab;
-  transform: scale(1.05);
+.text-sobre p {
+  color: #2563eb;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: justify;
 }
-.title-h2:hover::after {
-  transform: scale(1.2);
-  box-shadow: 0 0 15px #00ffab;
+.btn-sobre {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 13px 20px;
+  border: solid 1px transparent;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 2s;
+}
+
+.btn-sobre:hover {
+  background-color: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*Fim container/ sobre mim*/
+
+/*Início | container-card - Serviços*/
+main.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #1f2937;
+}
+.title-servicos h2 {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 40px;
 }
 .serviços {
   display: grid;
@@ -576,230 +523,123 @@ footer p {
   font-size: 20px;
   margin-top: 30px;
 }
+/*Fim/ Foooter*/
 
-/* * {
-outline: 1px solid limegreen;
-}   */
-
-/* === SEÇÃO MEDIA QUERIES === */
-
-/* === MENU HEADER === */
 @media (max-width: 768px) {
-  .site-header {
+  .menu {
+    padding: 0;
+  }
+  ul.cabecalho-link {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    font-size: 100%;
+    padding: 0;
+  }
+  .menu ul li {
+    width: 50%;
+    justify-content: center;
+  }
+  a.btn-nav {
+    margin-top: 20px;
+  }
+  .menu ul li a {
+  }
+  /************************/
+
+  /************************/
+  .intro-section {
     flex-direction: column;
-    height: auto;
-    padding: 1;
+    /* padding: 140px 2rem 60px; */
+    align-items: center;
+  }
+  .intro-contente {
+    max-width: 100%;
   }
   .intro-content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.2rem;
   }
   .intro-content h2,
   .intro-content h3 {
-    font-size: 1rem;
+    font-size: 0.89rem;
     letter-spacing: 0.1rem;
   }
+
   .form {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: static;
   }
-  @media (max-width: 480px) {
-    .site-logo {
-      font-size: 2rem;
-      letter-spacing: 0.1rem;
-    }
-    .nav-list li a {
-      font-size: 0.9rem;
-    }
+  .form input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
   }
-  /* === END === */
   .btn-intro {
     position: static;
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
+    box-shadow: 0 0 15px #58a6ff;
   }
+
   .intro-image {
+    margin-top: 2rem;
     max-width: 100%;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
   }
   .foto {
     width: 12rem;
     height: 12rem;
-    margin-top: 1rem;
+    margin-top: 0;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   /************************/
 
-  /* === INTRO SECTION === */
-  @media (max-width: 768px) {
-    .intro-section {
-      flex-direction: column;
-      align-items: center;
-      padding: 100px 1.5rem 40px;
-      text-align: center;
-      padding-top: 14rem;
-    }
-    .intro-content {
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      max-width: 500px;
-      padding: 0;
-    }
-    .intro-content h1,
-    .intro-content h2,
-    .intro-content h3 {
-      width: auto;
-      margin: 0.5rem 0;
-    }
-    .intro-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0rem;
-    }
-    .intro-content h3 {
-      font-size: 1.2rem;
-    }
-    .intro-image {
-      justify-content: center;
-      width: 100%;
-      margin-top: 2rem;
-    }
-    @media (max-width: 480px) {
-      .intro-image {
-        display: none;
-      }
-    }
-    .foto {
-      width: 12rem;
-      height: 12rem;
-    }
-    .form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      margin-top: 1.5rem;
-      font-size: 1rem;
-    }
-    .form input[type="email"],
-    .btn-intro {
-      width: 100%;
-      max-width: 300px;
-      margin-bottom: 1rem;
-    }
-    .btn-intro {
-      position: static;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 12px;
-      font-size: 1.2rem;
-      align-items: center;
-    }
-    /* === END === */
-
-    /* === SECTION SOBRE === */
-    .section-sobre {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-    .image-content {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2rem;
-      display: none;
-    }
-    .image-sobre {
-      width: 12rem;
-      height: 12rem;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 15px rgba(0, 255, 171, 0.7);
-    }
-    .sobre-text {
-      width: 100%;
-      max-width: 600px;
-    }
-    .sobre-text h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .sobre-text h5 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .sobre-text p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      text-align: justify;
-      padding: 1rem;
-    }
-
-    .btn-sobre {
-      padding: 12px 24px;
-      font-size: 1rem;
-      border-radius: 30px;
-      background-color: #00ffab;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 0 10px #00ffab;
-    }
-    /* === END === */
-
-    /* === SECTION SERVIÇOS === */
-    .serviços-container {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    .title-h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .serviços {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-    .card {
-      width: 100%;
-      max-width: 400px;
-      padding: 1.5rem;
-      box-shadow: 0 0 10px rgba(0, 255, 171, 0.2);
-      border-radius: 10px;
-      background-color: #111827;
-    }
-    .card h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .card p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    .btn-card {
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 30px;
-      background-color: #00ffab;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0 0 10px #00ffab;
-    }
-    .me-contate P {
-      padding: 1rem 0.6rem 0rem;
-      font-size: 1.5rem;
-      text-align: center;
-    }
+  /************************/
+  .background-color-sobre {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
+  .text-sobre {
+    padding-right: 0;
+    width: 80%;
+  }
+  .text-sobre h2 {
+    font-size: 300%;
+  }
+  .dv-img {
+    padding: 0;
+    width: 80%;
+  }
+  .dv-img .img-sobre {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /************************/
+
+  /************************/
+  .title-servicos h2 {
+    text-align: center;
+    font-size: 300%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  section.card {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  section.card:last-child {
+    margin-bottom: 0;
+  }
+  .me-contate {
+    text-align: center;
+    font-size: 90%;
+  }
+  /************************/
 }
