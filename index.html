@@ -20,17 +20,21 @@
   </head>
 
   <body>
+    <!--=== HEADER | NAV ===-->
     <header class="site-header">
       <h1 class="site-logo">Portifó<span>lio</span></h1>
 
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Menu principal">
         <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#s">Sobre mim</a></li>
-          <li><a href="#servi">Serviços</a></li>
-          <li><a href="#">Habilidades</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li>
-            <a href="https://linktr.ee/jorgeluis_santosmorais" target="_blank"
+            <a
+              href="https://linktr.ee/jorgeluis_santosmorais"
+              target="_blank"
+              rel="noopener noreferrer"
               >Contato</a
             >
           </li>
@@ -38,7 +42,8 @@
       </nav>
     </header>
 
-    <main id="servi">
+    <main>
+      <!--=== SEÇÃO INTRO ===-->
       <section class="intro-section">
         <div class="intro-content">
           <h2>Olá, me chamo</h2>
@@ -62,10 +67,11 @@
         </div>
 
         <div class="intro-image">
-          <img class="foto" src="img/0101-perfil.png" alt="" />
+          <img class="foto" src="img/perfil2.png" alt="" />
         </div>
       </section>
 
+      <!--=== SEÇÃO SOBRE ===-->
       <section class="section-sobre">
         <div class="image-content">
           <img class="image-sobre" src="img/perfil2.png" alt="" />
@@ -84,50 +90,42 @@
         </div>
       </section>
 
-      <!--INÍCIO CARD / SERVIÇOS-->
-      <!-- <h2 class="title-h2">Nossos Serviços</h2> -->
-      <section class="serviços">
+      <!--=== SEÇÃO SERVIÇOS ===-->
+      <section class="serviços-container">
+        <h2 class="title-h2">Nossos Serviços</h2>
+        <section class="serviços">
+          <div class="card">
+            <h2><i class="fa fa-laptop"></i>Reparo em Notebook</h2>
+            <p>
+              Especialista em reparo eletrônico de placas de notebooks e macbook, o sucesso em 95% de acertos é aliado ao conehcimento e não achismo, uso de ferramentas especificas, equipamentos de última geração para aferições e testes em bancada e em especial, o conhecimento em engenharia de esquema elétrico.
+            </p>
+            <button class="btn-card">Saiba mais</button>
+          </div>
+          <div class="card">
+            <h2><i class="fa fa-laptop"></i>Reparo em Notebook</h2>
+            <p>
+              Especialista em reparo eletrônico de placas de notebooks e macbook, o sucesso em 95% de acertos é aliado ao conehcimento e não achismo, uso de ferramentas especificas, equipamentos de última geração para aferições e testes em bancada e em especial, o conhecimento em engenharia de esquema elétrico.
+            </p>
+            <button class="btn-card">Saiba mais</button>
+          </div>
 
-        <div class="card">
-          <i class="fa fa-laptop"></i>
-          <h5>Reparo em Notebook</h5>
-          <p>
-            Especialista em reparo eletrônico de placas de notebooks e macbook, o sucesso em 95% de acertos é aliado ao conehcimento e não achismo, uso de ferramentas especificas, equipamentos de última geração para
-            aferições e testes em bancada e em especial, o conhecimento em engenharia de esquema elétrico.
-          </p>
-          <button class="btn-card">Saiba mais</button>
-        </div><div class="card">
-          <i class="fa fa-laptop"></i>
-          <h5>Reparo em Notebook</h5>
-          <p>
-            Especialista em reparo eletrônico de placas de notebooks e macbook, o sucesso em 95% de acertos é aliado ao conehcimento e não achismo, uso de ferramentas especificas, equipamentos de última geração para
-            aferições e testes em bancada e em especial, o conhecimento em engenharia de esquema elétrico.
-          </p>
-          <button class="btn-card">Saiba mais</button>
-        </div>
+          <div class="card">
+            <h2><i class="fa fa-camera"></i>Reparo em Notebook</h2>
+            <p>
+              Instalação de circuito fechado de câmeras-CFTV, alarmes convencionais ou monitorado, cerca elétrica, concertinas, automação residencial, automático para portões deslizantes, infraestrutura, terceirização, ronda noturo, vigilancia fixa e consultoria em segurança.
+            </p>
+            <button class="btn-card">Saiba mais</button>
+          </div>
 
-        <div class="card">
-          <i class="fa fa-camera"></i>
-          <h5>Segurança Eletrônica</h5>
-          <p>
-            Instalação de circuito fechado de câmeras-CFTV, alarmes convencionais ou monitorado, cerca elétrica, concertinas, automação residencial, automático para portões deslizantes, infraestrutura,
-            terceirização, ronda noturo, vigilancia fixa e consultoria em segurança.
-          </p>
-          <button class="btn-card">Saiba mais</button>
-        </div>
-
-        <div class="card">
-          <i class="fa fa-camera"></i>
-          <h5>Consultoria</h5>
-          <p>
-            Serviços como: auditoria interna na preveção de perdas e avarias de produtos, segurança particular, teinamento aos colaboradores e proprietário, consertos e analises de riscos.
-          </p>
-          <button class="btn-card">Saiba mais</button>
-        </div>
+          <div class="card">
+            <h2><i class="fa fa-camera"></i>Reparo em Notebook</h2>
+            <p>
+              Serviços como: auditoria interna na preveção de perdas e avarias de produtos, segurança particular, teinamento aos colaboradores e proprietário, consertos e analises de riscos.
+            </p>
+            <button class="btn-card">Saiba mais</button>
+          </div>
+        </section>
       </section>
-
-
-
 
       <div class="me-contate">
         <p>Contate minha equipe para que possamos juntos,...</p>
