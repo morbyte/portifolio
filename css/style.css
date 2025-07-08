@@ -871,16 +871,15 @@ footer p {
 
 @media (max-width: 768px){
 
+  /* === MENU HEADER === */
 .site-header{
-  display: flex;
   flex-direction: column;
   height: auto;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 1;
 }
 .site-logo{
   font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 .nav-list{
   flex-direction: column;
@@ -1020,37 +1019,103 @@ margin: -2px;
 }
 =======
   align-items: center;
+  gap: 0.5rem;
 }
-.nav-list li{
+@media (max-width: 480px) {
+.site-logo {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
-
-
-.intro-section{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.intro-content{
-  margin-top: 7rem;
-}
-.intro-content h2{
+.nav-list li a {
   font-size: 0.9rem;
 }
-.intro-content h1{
-  font-size: 1.5rem;
 }
-.intro-content h3{
-  font-size: 1rem;
-  text-align: center;
+  /* === END === */
+
+
+@media (max-width: 768px) {
+  .intro-section{
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 1.5rem 40px;
+    text-align: center;
+    padding-top: 14rem;
+  }
+  .intro-content{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+  .intro-content h1,
+  .intro-content h2,
+  .intro-content h3 {
+    width: auto;
+    margin: 0.5rem 0;
+  }
+  .intro-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+  }
+  .intro-content h3{
+    font-size: 1.2rem;
+  }
+   .intro-image {
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  @media (max-width: 480px) {
+  .intro-image {
+    display: none;
+  }
 }
-.intro-image{
-  margin-top: 2rem;
+   .foto {
+    width: 12rem;
+    height: 12rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .form input[type="email"],
+  .btn-intro {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+   .btn-intro {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 1.2rem;
+    align-items: center;
+  }
 }
-.intro-image .foto{
-  width: 10rem;
-  height: 10rem;
-}
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .serviços-container{
   display: flex;
@@ -1065,6 +1130,18 @@ margin: -2px;
     grid-template-columns: 1fr;
     padding: 2rem;
 
+}
+.section-sobre{
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 1rem; 
+}
+.image-content{
+  padding: 0rem;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 100%;
 }
 
   
