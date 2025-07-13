@@ -609,6 +609,23 @@ outline: 1px solid limegreen;
     }
   }
   /* === END === */
+  .btn-intro {
+    position: static;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .intro-image {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .foto {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 0;
+  }
+
+  /************************/
 
   /* === INTRO SECTION === */
   @media (max-width: 768px) {
