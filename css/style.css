@@ -66,7 +66,7 @@ html {
   color: #00ffab; 
 } 
 
-}
+
 .site-logo span {
   color: #00ffab;
 }
@@ -256,16 +256,14 @@ html {
 }
 @keyframes float {
   0% {
-=======
 }
-<<<<<<< HEAD
+
 @keyframes float{
   0%{
->>>>>>> 3a53585 (atualização |  css e media-queries)
-=======
+
 @keyframes float {
   0% {
->>>>>>> 12ff963 (atualização |  css e media-queries)
+
     transform: translateY(0px);
   }
   50% {
@@ -577,7 +575,6 @@ main.container-card {
 section.card:first-child {
   margin-left: 0;
 }
-.btn-card {
 
 .btn-card{
 
@@ -678,64 +675,6 @@ section.card:first-child {
   border: 1px solid #00ffab;
 >>>>>>> 1c00110 (atualização | up page)
 }
-<<<<<<< HEAD
-.me-contate-bloco {
-  background-color: #0d1117;
-  border: 1px solid #00ffab;
-  box-shadow: 0 0 12px rgba(0, 255, 171, 0.15);
-  padding: 20px;
-  border-radius: 1.2rem;
-  max-width: 350px;
-  text-align: center;
-  transition: 0.3s ease;
-  margin: 30px 0px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.me-contate-bloco:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 171, 0.35);
-  transform: translateY(-5px);
-}
-.me-contate-h2 {
-  text-align: center;
-}
-.icone-contato {
-  width: 5rem;
-  height: 5rem;
-  filter: drop-shadow(0 0 6px #00ffab);
-  margin-bottom: 2rem;
-}
-.me-contate-bloco h3 {
-  color: #00ffab;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.2rem;
-}
-.me-contate-bloco p {
-  color: #ecf0f1;
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-.btn-contate {
-  display: inline-block;
-  padding: 0.6rem 2rem;
-  border-radius: 2rem;
-  background-color: #00ffab;
-  color: #0d1117;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  border: solid 1px transparent;
-  /*box-shadow: 5px 5px 8px rgba(249, 0, 77, 0.250);*/
-  box-shadow: 0px 0px 10px rgba(0, 255, 171, 0.2);
-  transition: 0.3s ease;
-}
-.btn-contate:hover {
-  background-color: transparent;
-=======
 .me-contate p {
   color: #fff;
   font-size: 1rem;
@@ -763,30 +702,18 @@ section.card:first-child {
   background-color: transparent;
   border: solid 1px #00ffab;
   transform: scale(1);
->>>>>>> 12ff963 (atualização |  css e media-queries)
   color: #ffffff;
-<<<<<<< HEAD
-  border: solid 1px #00ffab;
-  box-shadow: 0 0 20px rgba(0, 255, 171, 0.4);
-=======
   letter-spacing: 0.2rem;
->>>>>>> 1c00110 (atualização | up page)
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* === SECTION: FOOTER === */
-footer {
-=======
+  footer 
 
 
 /* === SECTION: FOOTER === */
 footer{
->>>>>>> 3a53585 (atualização |  css e media-queries)
-=======
 /* === SECTION: FOOTER === */
 footer {
->>>>>>> 12ff963 (atualização |  css e media-queries)
   background-color: #1e1e2f;
   width: 100%;
   display: flex;
@@ -811,10 +738,7 @@ footer p {
   display: flex;
 }
 .redes-sociais a {
-<<<<<<< HEAD
-=======
   /* background-color: #f0f0f0; */
->>>>>>> 12ff963 (atualização |  css e media-queries)
   padding: 15px;
   width: 1.5rem;
   height: 1.5rem;
@@ -845,11 +769,8 @@ footer p {
   color: #007bb6;
 }
 .end p {
-<<<<<<< HEAD
   color: #00ffab;
-=======
   color: #f9004d;
->>>>>>> 12ff963 (atualização |  css e media-queries)
   font-size: 20px;
   margin-top: 30px;
 }
@@ -1248,7 +1169,6 @@ margin: -2px;
       text-align: center;
     }
   }
-<<<<<<< HEAD
 
   .btn-card {
     padding: 10px 20px;
@@ -1281,7 +1201,4 @@ margin: -2px;
   
 
 
->>>>>>> 3a53585 (atualização |  css e media-queries)
-=======
-}
->>>>>>> 1c00110 (atualização | up page)
+
