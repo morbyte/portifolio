@@ -24,11 +24,11 @@
     <header class="site-header">
       <h1 class="site-logo">Portifó<span>lio</span></h1>
 
-      <nav class="main-nav" aria-label="Menu principal">
+      <nav class="main-nav" aria-label="Menu principal" id="inicio">
         <ul class="nav-list">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre mim</a></li>
-          <li><a href="#serviços">Serviços</a></li>
+          <li><a href="#servicos">Serviços</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li>
             <a
@@ -72,7 +72,7 @@
       </section>
 
       <!--=== SEÇÃO SOBRE ===-->
-      <section class="section-sobre">
+      <section class="section-sobre" id="sobre">
         <div class="image-content">
           <img class="image-sobre" src="img/perfil2.png" alt="" />
         </div>
@@ -91,50 +91,45 @@
       </section>
 
       <!--=== SEÇÃO SERVIÇOS ===-->
-      <section class="serviços-container">
+      <section class="serviços-container" id="servicos">
         <h2 class="title-h2">Nossos Serviços</h2>
         <section class="serviços">
           <div class="card">
             <h2><i class="fa fa-laptop"></i>Reparo em Notebook</h2>
             <p>
-              Especialista em reparo eletrônico de placas de notebooks e
-              macbook, o sucesso em 95% de acertos é aliado ao conehcimento e
-              não achismo, uso de ferramentas especificas, equipamentos de
-              última geração para aferições e testes em bancada e em especial, o
-              conhecimento em engenharia de esquema elétrico.
+              Diagnóstico e conserto de placas eletrônicas com precisão técnica.
+              Utilizo engenharia reversa, análise de esquemas elétricos e
+              equipamentos avançados para garantir reparos eficazes em notebooks
+              e MacBooks.
             </p>
             <button class="btn-card">Saiba mais</button>
           </div>
           <div class="card">
-            <h2><i class="fa fa-laptop"></i>Reparo em Notebook</h2>
+            <h2><i class="fa fa-tools"></i>Manutenção e Otimização</h2>
             <p>
-              Especialista em reparo eletrônico de placas de notebooks e
-              macbook, o sucesso em 95% de acertos é aliado ao conehcimento e
-              não achismo, uso de ferramentas especificas, equipamentos de
-              última geração para aferições e testes em bancada e em especial, o
-              conhecimento em engenharia de esquema elétrico.
-            </p>
-            <button class="btn-card">Saiba mais</button>
-          </div>
-
-          <div class="card">
-            <h2><i class="fa fa-camera"></i>Reparo em Notebook</h2>
-            <p>
-              Instalação de circuito fechado de câmeras-CFTV, alarmes
-              convencionais ou monitorado, cerca elétrica, concertinas,
-              automação residencial, automático para portões deslizantes,
-              infraestrutura, terceirização, ronda noturo, vigilancia fixa e
-              consultoria em segurança.
+              Limpeza interna, troca de pasta térmica, upgrade de SSD/RAM e
+              ajustes no sistema operacional para melhorar desempenho e
+              prolongar a vida útil dos dispositivos.
             </p>
             <button class="btn-card">Saiba mais</button>
           </div>
 
           <div class="card">
-            <h2><i class="fa fa-camera"></i>Reparo em Notebook</h2>
+            <h2><i class="fa fa-camera"></i>Segurança Eletrônica</h2>
             <p>
-              Serviços como: auditoria interna na preveção de perdas e avarias
-              de produtos, segurança particular, teinamento aos colaboradores e
-              proprietário, consertos e analises de riscos.
+              Instalação de sistemas CFTV, alarmes monitorados, cercas elétricas
+              e automação de portões. Soluções integradas para residências,
+              comércios e indústrias.
+            </p>
+            <button class="btn-card">Saiba mais</button>
+          </div>
+
+          <div class="card">
+            <h2><i class="fa fa-shield-alt"></i>Consultoria em Segurança</h2>
+            <p>
+              SAuditoria de riscos, prevenção de perdas, treinamento de equipes
+              e implantação de protocolos de segurança. Atuação estratégica para
+              ambientes corporativos e residenciais.
             </p>
             <button class="btn-card">Saiba mais</button>
           </div>
@@ -142,43 +137,56 @@
       </section>
 
       <!--=== SEÇÃO CONTATE-ME ===-->
-      <section>
-        <div class="me-contate">
-          <p>
-            Meu objetivo é entregar soluções que combinam design, tecnologia e
-            propósito. Se você acredita no mesmo, estou pronto pra começar o
-            próximo projeto com você.
-          </p>
-          <a class="btn-contate" href="#">Vamos conversar</a>
-        </div>
-        <div class="me-contate">
-          <p>
-            Meu objetivo é entregar soluções que combinam design, tecnologia e
-            propósito. Se você acredita no mesmo, estou pronto pra começar o
-            próximo projeto com você.
-          </p>
-          <a class="btn-contate" href="#">Vamos conversar</a>
-        </div>
-        <div class="me-contate">
-          <p>
-            Meu objetivo é entregar soluções que combinam design, tecnologia e
-            propósito. Se você acredita no mesmo, estou pronto pra começar o
-            próximo projeto com você.
-          </p>
-          <a class="btn-contate" href="#">Vamos conversar</a>
+      <section class="me-contate-section">
+        <h2 class="title-contate-h2">Contate-me</h2>
+        <div class="me-contate-blocos">
+          <div class="me-contate-bloco">
+            <img
+              src="img/projeto.png"
+              alt="Ícone Projetos"
+              class="icone-contato"
+            />
+            <h3>Projetos que fazem sentido</h3>
+            <p>
+              Crio páginas web com propósito, navegabilidade e estilo. A cada
+              novo projeto, meu foco é unir estética e performance.
+            </p>
+            <a class="btn-contate" href="#">Falar sobre seguraça</a>
+          </div>
+          <div class="me-contate-bloco">
+            <img
+              src="img/seguranca.png"
+              alt="Ícone Projetos"
+              class="icone-contato"
+            />
+            <h3>Proteção com tecnologias</h3>
+            <p>
+              Soluções em segurança eletrônica para residências e empresas, com
+              integração inteligente e confiável.
+            </p>
+            <a class="btn-contate" href="#">Vamos conversar</a>
+          </div>
+          <div class="me-contate-bloco">
+            <img
+              src="img/solucao.png"
+              alt="Ícone Projetos"
+              class="icone-contato"
+            />
+            <h3>Soluções técnicas sob medida</h3>
+            <p>
+              Instalo e configuro sistemas, rede estruturada, manutenção de
+              dispositivos e assistência técnica especializada.
+            </p>
+            <a class="btn-contate" href="#">Solicitar suporte</a>
+          </div>
         </div>
       </section>
-
-      <!--me-contate-->
     </main>
 
     <!--INÍCIO FOOTER-->
     <footer>
       <h6>Jorge Luís</h6>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, Iusto qui quae<br />adipisicing
-        elit. Iusto qui quae deserunt.
-      </p>
+      <p>Desenvolvedor FullStack | Eletrônico | TI</p>
       <div class="redes-sociais">
         <a href="#"> <i class="fab fa-facebook"></i></a>
         <a href="#"> <i class="fab fa-instagram"></i></a>
@@ -190,15 +198,12 @@
           <i class="fab fa-linkedin"></i
         ></a>
       </div>
-      <!--redes-sociais-->
 
       <div class="end">
         <p>&copy;2023 - by Jorge Luís S de Morais</p>
       </div>
       <!--end-->
     </footer>
-    <!--footer-->
-    <!--FIM FOOTER-->
 
     <script src="main.js"></script>
   </body>
