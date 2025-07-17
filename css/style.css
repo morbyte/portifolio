@@ -27,6 +27,19 @@ html {
   --densidadeFonte: 600;
 }
 
+/* pré difinições | GLOBAL */
+.btn-global {
+  background-color: #00ffab;
+  color: #0d1117;
+  padding: 13px 20px;
+  border: solid 1px transparent;
+  border-radius: 30px;
+  transition: 2s;
+  font-size: 1rem;
+  font-weight: var(--densidadeFonte);
+  letter-spacing: var(--global-espaçamento);
+}
+
 /* === GLOBAL - HEADER === */
 .site-header {
   height: 105px;
@@ -232,7 +245,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 3rem 5rem 3rem 5rem;
+  padding: 3rem 5rem 0rem 5rem;
   position: relative;
   /* background: url(/img/e.webp) no-repeat center center; */
   /* background: url(../img/bg-1.jpg) no-repeat cover center;
@@ -260,7 +273,7 @@ html {
 }
 .sobre-text {
   width: 100%;
-  padding: 1rem;
+  padding-bottom: 2rem;
   max-width: none;
   height: auto;
 }
@@ -291,26 +304,18 @@ html {
   color: #ecf0f1;
   letter-spacing: var(--global-espaçamento);
   font-size: 0.9rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   line-height: 1.5rem;
   text-align: left;
 }
 .btn-sobre {
-  background-color: #00ffab;
-  color: #0d1117;
-  padding: 13px 20px;
-  border: solid 1px transparent;
-  border-radius: 30px;
-  transition: 2s;
-  font-size: 1rem;
-  font-weight: var(--densidadeFonte);
+  margin-top: 0rem;
 }
 .btn-sobre:hover {
   background-color: transparent;
   border: 1px solid #00ffab;
   color: #ecf0f1;
   cursor: pointer;
-  font-weight: bold;
 }
 /* === END === */
 
@@ -400,21 +405,7 @@ section.card:first-child {
   margin-left: 0;
 }
 .btn-card {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 2rem;
-  background-color: #00ffab;
-  color: #0d1117;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00ffab;
-  transition: 0.3s ease;
-  border: solid 1px transparent;
-  box-shadow: 0 0 10px rgba(0, 255, 171, 0.2);
-  font-weight: var(--densidadeFonte);
   margin-top: auto;
-  margin-bottom: 1rem;
-  letter-spacing: 0.1rem;
   width: fit-content;
 }
 .btn-card:hover {
@@ -456,16 +447,6 @@ section.card:first-child {
   text-align: justify;
 }
 .btn-contate {
-  background-color: #00ffab;
-  color: black;
-  padding: 12px 24px;
-  border: solid 1px transparent;
-  /*box-shadow: 5px 5px 8px rgba(249, 0, 77, 0.250);*/
-  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.25);
-  border-radius: 30px;
-  font-weight: 400;
-  transition: 2s;
-  letter-spacing: 0.2rem;
   display: inline-block;
   margin-bottom: 2rem;
   margin-top: 3rem;
@@ -475,7 +456,6 @@ section.card:first-child {
   border: solid 1px #00ffab;
   transform: scale(1);
   color: #ffffff;
-  letter-spacing: 0.2rem;
 }
 /* === END === */
 
