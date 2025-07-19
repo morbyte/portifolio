@@ -114,6 +114,7 @@ html {
 .intro-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   gap: 2rem;
   align-items: center;
   padding: 9rem 6rem 3rem 6rem;
@@ -132,6 +133,10 @@ html {
   max-width: 100%;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  min-width: 380px;
 }
 .intro-content span {
   color: #00ffab;
@@ -524,205 +529,206 @@ footer p {
   outline: 1px solid limegreen;
 } */
 
+/* === MENU HEADER === */
 @media (max-width: 768px) {
-  /* === MENU HEADER === */
-  @media (max-width: 768px) {
-    .site-header {
-      flex-direction: column;
-      height: auto;
-      padding: 1;
-    }
+  .site-header {
+    flex-direction: column;
+    height: auto;
+    padding: 1;
+  }
+  .site-logo {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  @media (max-width: 480px) {
     .site-logo {
       font-size: 2rem;
-      letter-spacing: 0.2rem;
+      letter-spacing: 0.1rem;
     }
-    .nav-list {
+    .nav-list li a {
+      font-size: 0.9rem;
+    }
+  }
+  /* === END === */
+
+  /* === INTRO SECTION === */
+  @media (max-width: 768px) {
+    .intro-section {
       flex-direction: column;
       align-items: center;
-      gap: 0.5rem;
+      /* padding: 100px 1.5rem 40px; */
+      /* text-align: center; */
+      padding-top: 14rem;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .intro-content {
+      align-items: center;
+      text-align: center;
+      max-width: 700px;
+      padding: 0;
+    }
+    .intro-content h1,
+    .intro-content h2,
+    .intro-content h3 {
+      width: auto;
+      margin: 0.5rem 0;
+    }
+    .intro-content h1 {
+      font-size: 1rem;
+      margin-bottom: 0rem;
+    }
+    .intro-content h3 {
+      font-size: 1rem;
+    }
+    .intro-image {
+      justify-content: center;
+      width: 100%;
+      margin-top: 2rem;
     }
     @media (max-width: 480px) {
-      .site-logo {
-        font-size: 2rem;
-        letter-spacing: 0.1rem;
+      .intro-image {
+        display: none;
       }
-      .nav-list li a {
-        font-size: 0.9rem;
+    }
+    .foto {
+      width: 12rem;
+      height: 12rem;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+    }
+    .form input[type="email"],
+    .btn-intro {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 2rem;
+    }
+    .btn-intro {
+      position: static;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 12px;
+      font-size: 1.2rem;
+      align-items: center;
+    }
+    @media (max-width: 600px) {
+      .form-inline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .form-inline input[type="email"],
+      .form-inline input[type="submit"] {
+        width: 100%;
+      }
+      .form-inline input,
+      .form-inline .btn-intro {
+        transition: all 0.3s ease-in-out;
       }
     }
     /* === END === */
 
-    /* === INTRO SECTION === */
-    @media (max-width: 768px) {
-      .intro-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 100px 1.5rem 40px;
-        text-align: center;
-        padding-top: 14rem;
-      }
-      .intro-content {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        max-width: 500px;
-        padding: 0;
-      }
-      .intro-content h1,
-      .intro-content h2,
-      .intro-content h3 {
-        width: auto;
-        margin: 0.5rem 0;
-      }
-      .intro-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0rem;
-      }
-      .intro-content h3 {
-        font-size: 1.2rem;
-      }
-      .intro-image {
-        justify-content: center;
-        width: 100%;
-        margin-top: 2rem;
-      }
-      @media (max-width: 480px) {
-        .intro-image {
-          display: none;
-        }
-      }
-      .foto {
-        width: 12rem;
-        height: 12rem;
-      }
-      .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 1.5rem;
-        font-size: 1rem;
-      }
-      .form input[type="email"],
-      .btn-intro {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 1rem;
-      }
-      .btn-intro {
-        position: static;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 12px;
-        font-size: 1.2rem;
-        align-items: center;
-      }
-      /* === END === */
-
-      /* === SECTION SOBRE === */
-      .section-sobre {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 1.5rem;
-        text-align: center;
-      }
-      .image-content {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2rem;
-        display: none;
-      }
-      .image-sobre {
-        width: 12rem;
-        height: 12rem;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 0 15px rgba(0, 255, 171, 0.7);
-      }
-      .sobre-text {
-        width: 100%;
-        max-width: 600px;
-      }
-      .sobre-text h2 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-      }
-      .sobre-text h5 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
-      .sobre-text p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-        text-align: justify;
-        padding: 1rem;
-      }
-
-      .btn-sobre {
-        padding: 12px 24px;
-        font-size: 1rem;
-        border-radius: 30px;
-        background-color: #00ffab;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 10px #00ffab;
-      }
-      /* === END === */
-
-      /* === SECTION SERVIÇOS === */
-      .serviços-container {
-        text-align: center;
-        padding: 2rem 1rem;
-      }
-      .title-h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-      }
-      .serviços {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-      }
-      .card {
-        width: 100%;
-        max-width: 400px;
-        padding: 1.5rem;
-        box-shadow: 0 0 10px rgba(0, 255, 171, 0.2);
-        border-radius: 10px;
-        background-color: #111827;
-      }
-      .card h2 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
-      .card p {
-        font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 1rem;
-      }
-      .btn-card {
-        padding: 10px 20px;
-        font-size: 1rem;
-        border-radius: 30px;
-        background-color: #00ffab;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 10px #00ffab;
-      }
-      .me-contate P {
-        padding: 1rem 0.6rem 0rem;
-        font-size: 1.5rem;
-        text-align: center;
-      }
+    /* === SECTION SOBRE === */
+    .section-sobre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .image-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      display: none;
+    }
+    .image-sobre {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0, 255, 171, 0.7);
+    }
+    .sobre-text {
+      width: 100%;
+      max-width: 600px;
+    }
+    .sobre-text h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .sobre-text h5 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .sobre-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      padding: 1rem;
     }
 
+    .btn-sobre {
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 30px;
+      background-color: #00ffab;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffab;
+    }
+    /* === END === */
+
+    /* === SECTION SERVIÇOS === */
+    .serviços-container {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .title-h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .serviços {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .card {
+      width: 100%;
+      max-width: 400px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 255, 171, 0.2);
+      border-radius: 10px;
+      background-color: #111827;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
     .btn-card {
       padding: 10px 20px;
       font-size: 1rem;
@@ -733,5 +739,21 @@ footer p {
       cursor: pointer;
       box-shadow: 0 0 10px #00ffab;
     }
+    .me-contate P {
+      padding: 1rem 0.6rem 0rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  .btn-card {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: #00ffab;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffab;
   }
 }
