@@ -135,7 +135,7 @@ html {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   min-width: 380px;
 }
 .intro-content span {
@@ -544,6 +544,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 2rem;
   }
   @media (max-width: 480px) {
     .site-logo {
@@ -559,20 +560,12 @@ footer p {
   /* === INTRO SECTION === */
   @media (max-width: 768px) {
     .intro-section {
-      flex-direction: column;
-      align-items: center;
-      /* padding: 100px 1.5rem 40px; */
-      /* text-align: center; */
-      padding-top: 14rem;
-      justify-content: center;
-      margin: 0 auto;
-      width: 100%;
+      background-color: yellow;
+      display: flex;
+      text-align: center;
+      padding: 12rem 0rem 2rem 0rem;
     }
     .intro-content {
-      align-items: center;
-      text-align: center;
-      max-width: 700px;
-      padding: 0;
     }
     .intro-content h1,
     .intro-content h2,
@@ -612,35 +605,42 @@ footer p {
     .form input[type="email"],
     .btn-intro {
       width: 100%;
-      max-width: 300px;
-      margin-bottom: 2rem;
+      max-width: 200px;
+      margin-bottom: 0.2rem;
     }
     .btn-intro {
       position: static;
       width: 100%;
-      max-width: 300px;
+      max-width: 200px;
       margin: 0 auto;
       padding: 12px;
       font-size: 1.2rem;
       align-items: center;
     }
-    @media (max-width: 600px) {
-      .form-inline {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .form-inline input[type="email"],
-      .form-inline input[type="submit"] {
-        width: 100%;
-      }
-      .form-inline input,
-      .form-inline .btn-intro {
-        transition: all 0.3s ease-in-out;
-      }
+    .form-inline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
     }
+
+    .form-inline input[type="email"],
+    .form-inline input[type="submit"] {
+      width: 100%;
+      transform: none;
+      position: static;
+    }
+    .form-inline input,
+    .form-inline .btn-intro {
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-intro {
+      position: static;
+      transform: none;
+      padding: 12px;
+      font-size: 1.2rem;
+    }
+
     /* === END === */
 
     /* === SECTION SOBRE === */
@@ -648,7 +648,7 @@ footer p {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem 1.5rem;
+      padding: 1rem 1rem 0.5rem 1rem;
       text-align: center;
     }
     .image-content {
@@ -700,11 +700,12 @@ footer p {
     /* === SECTION SERVIÇOS === */
     .serviços-container {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 0.5rem 1rem;
+      display: flex;
+      flex-direction: column;
     }
     .title-h2 {
       font-size: 2rem;
-      margin-bottom: 2rem;
     }
     .serviços {
       display: flex;
@@ -738,22 +739,18 @@ footer p {
       border: none;
       cursor: pointer;
       box-shadow: 0 0 10px #00ffab;
-    }
-    .me-contate P {
-      padding: 1rem 0.6rem 0rem;
-      font-size: 1.5rem;
+      display: block;
+      margin: 0 auto;
       text-align: center;
     }
-  }
-
-  .btn-card {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 30px;
-    background-color: #00ffab;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 0 10px #00ffab;
+    .me-contate h2{
+      font-size: 1.5rem;
+    }
+    .me-contate P {
+      padding: 1rem 0rem 0rem 0rem;
+      font-size: 1.1rem;
+      text-align: justify;
+      line-height: 1.4rem;
   }
 }
+  
