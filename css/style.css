@@ -121,6 +121,7 @@ html {
   background: url(/img/10.jpg) center/cover no-repeat;
   position: relative;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 .intro-section::before {
   content: "";
@@ -564,6 +565,8 @@ footer p {
       display: flex;
       text-align: center;
       padding: 12rem 0rem 2rem 0rem;
+      min-height: 100vh;
+      flex-direction: column;
     }
     .intro-content {
     }
