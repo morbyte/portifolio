@@ -121,6 +121,7 @@ html {
   background: url(/img/10.jpg) center/cover no-repeat;
   position: relative;
   flex-wrap: wrap;
+  z-index: 0;
 }
 .intro-section::before {
   content: "";
@@ -137,6 +138,7 @@ html {
   flex-direction: column;
   justify-content: center;
   min-width: 380px;
+  z-index: 1;
 }
 .intro-content span {
   color: #00ffab;
@@ -220,6 +222,7 @@ html {
   justify-content: right;
   align-items: center;
   max-width: 100%;
+  z-index: 1;
 }
 .foto {
   width: 20rem;
