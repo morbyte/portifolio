@@ -112,10 +112,12 @@ html {
 
 /* === SEÇÃO INTRO === */
 .intro-section {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: center; */
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
   align-items: center;
   padding: 9rem 6rem 3rem 6rem;
   background: url(/img/10.jpg) center/cover no-repeat;
@@ -131,13 +133,14 @@ html {
   z-index: 0;
 }
 .intro-content {
-  max-width: 100%;
+  /* max-width: 100%; */
+  max-width: 600px;
   position: relative;
   z-index: 1;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 380px;
+  min-width: 380px; */
 }
 .intro-content span {
   color: #00ffab;
